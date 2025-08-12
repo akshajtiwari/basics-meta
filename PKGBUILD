@@ -13,7 +13,6 @@ depends=(
   'lf'
   'neovim'
   'lazygit'
-  'tgpt'
   'yt-dlp'
   'cava'
   'brightnessctl'
@@ -22,11 +21,8 @@ depends=(
   'neofetch'
   'btop'
   'man-db'
-  'dysk'
 
   # --- Browsers ---
-  'brave-bin'
-  'zen-browser-bin'
 
   # --- Media ---
   'vlc'
@@ -51,7 +47,6 @@ depends=(
   'noto-fonts'
   'noto-fonts-emoji'
   'papirus-icon-theme'
-  'ttf-nerd-fonts-symbols-mono'
 
   # --- Audio ---
   'pipewire'
@@ -105,9 +100,16 @@ depends=(
 
   # --- Bluetooth ---
   'bluez'
-  'bluez-utils'
-)
+  'bluez-utils')
 
 package() {
   :
 }
+
+optdepends=(
+  'tgpt: Terminal AI tool'
+  'brave-bin: Brave browser'
+  'zen-browser-bin: Zen browser'
+  'dysk: Disk management tool'
+  'ttf-nerd-fonts-symbols-mono: Nerd font symbols'
+)
