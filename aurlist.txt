@@ -1,0 +1,14 @@
+debtap
+grimblast-git
+kvantum-theme-catppuccin-git
+linuxdeploy-appimage
+neofetch
+spicetify-cli
+spotify
+tofi
+uefitool
+visual-studio-code-bin
+vmware-keymaps
+wifi-manager-git
+wlogout
+zen-browser-bin

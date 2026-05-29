@@ -1,115 +1,185 @@
- Maintainer: Akshaj Tiwari akshajtiwari9a@gmail.com
+# Maintainer: Akshaj Tiwari <akshajtiwari9a@gmail.com>
+
 pkgname=basics
-pkgver=1
+pkgver=3.0
 pkgrel=1
-pkgdesc="Meta-package installing essentials for a Zenities-style Hyprland daily driver setup"
+pkgdesc="Akshaj full laptop setup"
 arch=('x86_64')
-url=""
-license=('unknown')
+license=('custom')
 install=$pkgname.install
-
 depends=(
-  # --- Terminal & CLI Tools ---
-  'lf'
-  'neovim'
-  'lazygit'
-  'yt-dlp'
-  'cava'
-  'brightnessctl'
-  'playerctl'
-  'git'
-  'neofetch'
-  'btop'
-  'man-db'
 
-  # --- Browsers ---
+# ---------------- HYPRLAND STACK ----------------
+hyprland
+hypridle
+hyprlock
+hyprpaper
+xdg-desktop-portal-hyprland
+xdg-desktop-portal
+waybar
+swww
+grim
+slurp
+cliphist
+swaync
+wlogout
+tofi
+wl-clipboard
+brightnessctl
+playerctl
+pamixer
+swappy
+wf-recorder
+grimblast-git
 
-  # --- Media ---
-  'vlc'
-  'gimp'
-  'obs-studio'
-  'ffmpeg'
+# ---------------- NVIDIA + CUDA + AI ----------------
+nvidia-settings
+nvtop
+egl-wayland
+libva-nvidia-driver
+cuda
+cudnn
+nsight-compute
+nsight-systems
+python-pytorch-cuda
+python-tensorflow-cuda
+jupyterlab
+ipython
+python-virtualenv
+python-virtualenvwrapper
 
-  # --- Hyprland Core ---
-  'hyprland'
-  'xdg-desktop-portal-hyprland'
-  'waybar'
-  'swww'
-  'wl-clipboard'
-  'grim'
-  'slurp'
-  'wofi'
-  'rofi'
-  'cliphist'
+# ---------------- AUDIO + BLUETOOTH FULL ----------------
+pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+wireplumber
+pavucontrol
+bluez
+bluez-utils
+blueman
+sof-firmware
 
-  # --- Fonts & Icons ---
-  'ttf-jetbrains-mono'
-  'noto-fonts'
-  'noto-fonts-emoji'
-  'papirus-icon-theme'
+# ---------------- LAPTOP POWER / BATTERY ----------------
+tlp
+tlp-rdw
+powertop
+upower
+acpid
 
-  # --- Audio ---
-  'pipewire'
-  'pipewire-pulse'
-  'pavucontrol'
+# ---------------- BUILD / AUR SUPPORT ----------------
+base-devel
+cmake
+ninja
+meson
 
-  # --- Notifications ---
-  'mako'
-  'dunst'
+# ---------------- TERMINAL / CLI ----------------
+kitty
+zsh
+git
+neofetch
+fastfetch
+btop
+htop
+iotop
+duf
+tree
+tldr
+lazygit
+yazi
+wget
+zip
+unzip
+rsync
+yt-dlp
+tgpt
+neovim
+nano
+nano-syntax-highlighting
+bash-completion
 
-  # --- File Management & GUI Helpers ---
-  'thunar'
-  'file-roller'
-  'gnome-keyring'
-  'blueman'
-  'gvfs'
-  'gvfs-mtp'
+# ---------------- BROWSERS ----------------
+firefox
+zen-browser-bin
 
-  # --- Image Viewer ---
-  'imv'
+# ---------------- MEDIA ----------------
+obs-studio
+spotify
+spicetify-cli
+cava
+haruna
+imv
+gwenview
+ffmpegthumbnailer
 
-  # --- Office Suite ---
-  'libreoffice-fresh'
+# ---------------- FILES / GUI ----------------
+dolphin
+dolphin-plugins
+ark
+gvfs
+thunar
+okular
+libreoffice-fresh
 
-  # --- PDF Viewer ---
-  'zathura'
-  'zathura-pdf-mupdf'
+# ---------------- NETWORK ----------------
+networkmanager
+networkmanager-openvpn
+networkmanager-openconnect
+nm-connection-editor
+inetutils
+bind
+nss-mdns
 
-  # --- Shell & Prompt Enhancements ---
-  'zsh'
-  'zsh-syntax-highlighting'
-  'zsh-autosuggestions'
-  'starship'
+# ---------------- DEV / WORK ----------------
+npm
+python
+python-pipx
+python-pywal
+go
+jdk-openjdk
+visual-studio-code-bin
+meld
+postgresql
 
-  # --- Networking ---
-  'networkmanager'
-  'network-manager-applet'
+# ---------------- THEMING ----------------
+kvantum
+kvantum-theme-catppuccin-git
+qt5ct
+qt6ct
+nwg-look
 
-  # --- System Utilities ---
-  'flatpak'
-  'timeshift'
-  'gnome-disk-utility'
-  'cups'
-  'system-config-printer'
+# ---------------- FONTS ----------------
+noto-fonts
+noto-fonts-emoji
+ttf-jetbrains-mono
+ttf-jetbrains-mono-nerd
+ttf-fira-code
+ttf-nerd-fonts-symbols
+cantarell-fonts
 
-  # --- Development Tools ---
-  'code'
-  'npm'
-  'python'
-  'python-pip'
+# ---------------- FLATPAK ----------------
+flatpak
 
-  # --- Bluetooth ---
-  'bluez'
-  'bluez-utils')
+# ---------------- KEYRING / SECURITY ----------------
+gnome-keyring
+seahorse
 
-package() {
-  :
-}
+# ---------------- UTILITIES ----------------
+xdg-user-dirs
+xdg-utils
+xclip
+accountsservice
+unrar
+7zip
+)
 
 optdepends=(
-  'tgpt: Terminal AI tool'
-  'brave-bin: Brave browser'
-  'zen-browser-bin: Zen browser'
-  'dysk: Disk management tool'
-  'ttf-nerd-fonts-symbols-mono: Nerd font symbols'
+  'debtap: convert deb packages'
+  'linuxdeploy-appimage: appimage tool'
+  'vmware-keymaps: vmware support'
+  'uefitool: firmware tool'
 )
+
+package() {
+
+}
